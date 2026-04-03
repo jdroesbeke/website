@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – ACSI Services</title>
+  <meta name="description" content="Neem contact op met ACSI Services. Bel onze 24/7 beschikbare demo-lijn of stuur een e-mail." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Bereikbaarheid table */
+    .bereikbaar-table { width:100%; border-collapse:collapse; margin-top:0.75rem; }
+    .bereikbaar-table td { padding:0.4rem 0; font-size:0.87rem; color:var(--mid); }
+    .bereikbaar-table td:first-child { color:var(--muted); width:55%; }
+    .bereikbaar-table tr:not(:last-child) td { border-bottom:1px solid var(--border); }
+
+    /* Demo block note */
+    .demo-note {
+      display:flex; align-items:flex-start; gap:0.75rem;
+      padding:1rem 1.25rem; background:var(--accent-light);
+      border-radius:var(--radius-sm); margin-bottom:1.5rem;
+      font-size:0.875rem; color:var(--mid); line-height:1.6;
+    }
+    .demo-note-icon { font-size:1.1rem; flex-shrink:0; margin-top:1px; }
+
+    /* 24/7 animated ring */
+    @keyframes pulseRingOuter {
+      0%,100% { opacity:0.25; transform:scale(1); }
+      50%      { opacity:0.5;  transform:scale(1.03); }
+    }
+    .phone-cta-outer-ring {
+      position:absolute; inset:-8px;
+      border-radius:calc(var(--radius-md)+8px);
+      border:1.5px solid rgba(207,124,17,0.25);
+      animation:pulseRingOuter 3s ease-in-out infinite;
+      pointer-events:none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="ACSI Services - Home">
+        <img src="logo.jpg" alt="ACSI Services" class="brand-logo" />
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="product.html">Product</a>
+        <a href="over-ons.html#werkwijze">Werkwijze</a>
+        <a href="pakketten.html">Pakketten</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary nav-cta">Gratis demo</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-orb"></div>
+    <div class="container page-hero-inner">
+      <div class="hero-badge">Contact</div>
+      <h1 class="page-hero-title">Laten we kennismaken</h1>
+      <p class="page-hero-sub">Neem contact op of ervaar onze digitale assistent direct. We denken graag met u mee over wat wij voor uw bereikbaarheid kunnen betekenen.</p>
+    </div>
+  </section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: Contact info + bereikbaarheid -->
+      <div class="contact-info-block">
+        <div class="section-label">Bereikbaarheid</div>
+        <h2 style="font-family:var(--font-display);font-size:1.7rem;margin-bottom:2rem;">Zo kunt u ons bereiken</h2>
+
+        <a href="mailto:ops@acsi-services.com" class="contact-info-card">
+          <div class="cic-icon">
+            <!-- Mail -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="M3 7l9 6 9-6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cic-type">E-mail</div>
+            <div class="cic-value">ops@acsi-services.com</div>
+            <div class="cic-note">We reageren binnen één werkdag</div>
+          </div>
+        </a>
+
+        <div class="contact-info-card">
+          <div class="cic-icon">
+            <!-- Clock -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cic-type">Kantooruren</div>
+            <div class="cic-value">Ma – Do, 09:00 – 16:00</div>
+            <div class="cic-sub">Buiten kantooruren beantwoordt onze<br>digitale assistent uw oproep direct.</div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="cic-icon">
+            <!-- Building / KVK -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="7" width="18" height="13" rx="2"/>
+              <path d="M7 7V4h10v3"/>
+              <path d="M7 11h2M7 15h2M11 11h2M11 15h2M15 11h2M15 15h2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cic-type">KVK-nummer</div>
+            <div class="cic-value">99219166</div>
+          </div>
+        </div>
+
+      </div>
+
+          <!-- FAQ -->
+          <div style="margin-top:2rem;">
+            <h3 style="font-family:var(--font-display);font-size:1.15rem;font-weight:500;margin-bottom:1rem;">Veelgestelde vragen</h3>
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-q">Hoe snel kan ik starten? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Na de kennismaking en inrichting gaat de assistent doorgaans binnen enkele werkdagen live. We zorgen voor een soepele onboarding zodat u snel resultaat ziet.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Werkt het met mijn huidige agenda? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Ja. Onze assistent integreert naadloos met Google Calendar en Outlook. Afspraken verschijnen direct in uw bestaande agenda, zonder dat u iets hoeft te veranderen.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Klinkt de assistent menselijk? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Absoluut. Onze digitale assistent is gebouwd op geavanceerde AI-spraaktechnologie en klinkt naturel, professioneel en afgestemd op de toon van uw bedrijf. Belt u onze demodemo-lijn om het zelf te ervaren.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Kan ik tussentijds opzeggen? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Ja, u kunt opzeggen met inachtneming van de overeengekomen opzegtermijn. We werken liever aan uw tevredenheid dan aan contracte, neem contact op bij vragen.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Wat als er technische problemen zijn? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Tijdens kantooruren kunt u ons direct bereiken via e-mail. We monitoren het systeem proactief en lossen problemen doorgaans op voordat u ze merkt.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Is mijn bedrijfsdata veilig? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Ja. Alle data wordt verwerkt in overeenstemming met de AVG/GDPR. We slaan alleen de informatie op die noodzakelijk is voor de dienstverlening en bespreken de dataverwerkingsafspraken tijdens de onboarding.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Demo + phone CTA -->
+        <div class="contact-right">
+          <div class="section-label">Gratis demo</div>
+          <h2 style="font-family:var(--font-display);font-size:1.7rem;margin-bottom:1.5rem;">Ervaar het zel, direct</h2>
+
+          <div class="demo-block">
+            <h3>Hoe werkt de gratis demo?</h3>
+            <p>Bel ons demonnummer en u wordt direct te woord gestaan door onze digitale assistent. U ervaart in de praktijk hoe een gesprek verloop, van begroeting tot het inplannen van een afspraak.</p>
+            <p>Geen registratie, geen verplichtingen. Gewoon bellen en zelf beoordelen.</p>
+          </div>
+
+          <!-- PHONE CTA — prominent 24/7 -->
+          <div style="position:relative;margin-top:1.5rem;">
+            <div class="phone-cta-outer-ring"></div>
+            <a href="tel:+3197010287722" class="phone-cta">
+              <div class="phone-cta-icon">📞</div>
+              <div class="phone-cta-text">
+                <div class="phone-cta-label">Bel nu — gratis demo</div>
+                <div class="phone-cta-number">+31 970 102 87722</div>
+                <div class="phone-cta-sub">Direct te woord gestaan door onze assistent</div>
+              </div>
+              <div class="phone-cta-24h">24/7</div>
+            </a>
+          </div>
+
+          <!-- 24/7 explanation block -->
+          <div style="background:var(--dark);border-radius:var(--radius-md);padding:1.75rem;margin-top:1.25rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+              <div style="width:10px;height:10px;border-radius:50%;background:#4ade80;flex-shrink:0;box-shadow:0 0 8px rgba(74,222,128,0.6);animation:pulseDot 2s ease-in-out infinite;"></div>
+              <span style="font-size:0.82rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.55);">Live — 24 uur per dag, 7 dagen per week</span>
+            </div>
+            <p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.7;margin:0;">Dit nummer wordt op dit moment beantwoord door onze digitale assisten, niet morgen, niet na kantooruren, maar <em style="color:var(--accent);">nu, direct</em>. Dat is precies wat wij voor uw bedrijf kunnen leveren.</p>
+          </div>
+
+          <style>
+            @keyframes pulseDot {
+              0%,100% { opacity:1; }
+              50%      { opacity:0.5; }
+            }
+          </style>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section style="background:var(--dark);padding:5rem 0;text-align:center;">
+    <div class="container">
+      <div class="section-label">Klaar om te starten?</div>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.4rem);color:var(--white);margin-bottom:1.25rem;margin-top:0.5rem;">Weet u welk pakket bij u past?</h2>
+      <p style="color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto 2rem;">Gebruik onze pakketadviseur voor een op maat aanbeveling, of neem direct contact op.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="pakketten.html#kwalificeren" class="btn btn-primary btn-lg">Pakketadviseur</a>
+        <a href="pakketten.html" class="btn btn-ghost-light btn-lg">Vergelijk pakketten</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="ACSI Services" class="footer-logo" />
+          <div>
+            <div style="font-size:0.9rem;font-weight:600;color:rgba(255,255,255,0.6);">ACSI Services</div>
+            <div class="footer-tagline">AI-gedreven telefonie die voor u werkt</div>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="over-ons.html">Over ons</a>
+          <a href="product.html">Product</a>
+          <a href="over-ons.html#werkwijze">Werkwijze</a>
+          <a href="pakketten.html">Pakketten</a>
+          <a href="contact.html">Contact</a>
+          <a href="algemenevoorwaarden.html">Algemene voorwaarden</a> 
+          <a href="privacybeleid.html">Privacybeleid</a> 
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> ACSI Services &nbsp;·&nbsp; KVK 99219166 &nbsp;·&nbsp; Alle rechten voorbehouden.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="info-popover" role="tooltip" aria-hidden="true"></div>
+  <script src="main.js"></script>
+</body>
+</html>
