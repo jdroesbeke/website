@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <title>ACSI Serives – Contact</title>
+  <meta name="description" content="Contact ACSI Services. Call our 24/7 available demo line or send an email." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Bereikbaarheid table */
+    .bereikbaar-table { width:100%; border-collapse:collapse; margin-top:0.75rem; }
+    .bereikbaar-table td { padding:0.4rem 0; font-size:0.87rem; color:var(--mid); }
+    .bereikbaar-table td:first-child { color:var(--muted); width:55%; }
+    .bereikbaar-table tr:not(:last-child) td { border-bottom:1px solid var(--border); }
+
+    /* Demo block note */
+    .demo-note {
+      display:flex; align-items:flex-start; gap:0.75rem;
+      padding:1rem 1.25rem; background:var(--accent-light);
+      border-radius:var(--radius-sm); margin-bottom:1.5rem;
+      font-size:0.875rem; color:var(--mid); line-height:1.6;
+    }
+    .demo-note-icon { font-size:1.1rem; flex-shrink:0; margin-top:1px; }
+
+    /* 24/7 animated ring */
+    @keyframes pulseRingOuter {
+      0%,100% { opacity:0.25; transform:scale(1); }
+      50%      { opacity:0.5;  transform:scale(1.03); }
+    }
+    .phone-cta-outer-ring {
+      position:absolute; inset:-8px;
+      border-radius:calc(var(--radius-md)+8px);
+      border:1.5px solid rgba(207,124,17,0.25);
+      animation:pulseRingOuter 3s ease-in-out infinite;
+      pointer-events:none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index_en.html" class="brand-link" aria-label="ACSI Services - Home">
+        <img src="logo.jpg" alt="ACSI Services" class="brand-logo" />
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index_en.html">Home</a>
+        <a href="about_us.html">About us</a>
+        <a href="product_en.html">Product</a>
+        <a href="about_us.html#werkwijze">Workflow</a>
+        <a href="options.html">Options</a>
+        <a href="contact_en.html" aria-current="page">Contact</a>
+      </nav>
+      <a href="contact_en.html" class="btn btn-primary nav-cta">Free demo</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="lang-switch">
+  <a class="lang-btn lang-btn--nl" id="lang-nl" href="#" aria-label="Nederlands">
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <rect width="20" height="6.67" y="0"     fill="#AE1C28"/>
+      <rect width="20" height="6.67" y="6.67"  fill="#FFFFFF"/>
+      <rect width="20" height="6.67" y="13.33" fill="#21468B"/>
+    </svg>
+  </a>
+  <a class="lang-btn lang-btn--en" id="lang-en" href="#" aria-label="English">
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <rect width="20" height="20" fill="#012169"/>
+      <path d="M0,0 L20,20 M20,0 L0,20" stroke="#fff" stroke-width="3"/>
+      <path d="M0,0 L20,20 M20,0 L0,20" stroke="#C8102E" stroke-width="1.5"/>
+      <path d="M10,0 V20 M0,10 H20" stroke="#fff" stroke-width="5"/>
+      <path d="M10,0 V20 M0,10 H20" stroke="#C8102E" stroke-width="3"/>
+    </svg>
+  </a>
+</div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-orb"></div>
+    <div class="container page-hero-inner">
+      <div class="hero-badge">Contact</div>
+      <h1 class="page-hero-title">Let’s get in touch</h1>
+      <p class="page-hero-sub">Get in touch or experience our digital assistant directly. We are happy to think along with you about what we can mean for your availability.</p>
+    </div>
+  </section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: Contact info + bereikbaarheid -->
+      <div class="contact-info-block">
+        <div class="section-label">Availability</div>
+        <h2 style="font-family:var(--font-display);font-size:1.7rem;margin-bottom:2rem;">How you can reach us</h2>
+
+        <a href="mailto:ops@acsi-services.com" class="contact-info-card">
+          <div class="cic-icon">
+            <!-- Mail -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="M3 7l9 6 9-6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cic-type">Email</div>
+            <div class="cic-value">ops@acsi-services.com</div>
+            <div class="cic-note">We respond within one working day</div>
+          </div>
+        </a>
+
+        <div class="contact-info-card">
+          <div class="cic-icon">
+            <!-- Clock -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="cic-type">Office hours</div>
+            <div class="cic-value">Mon – Thu, 09:00 – 16:00</div>
+            <div class="cic-sub">Outside office hours, our<br>digital assistant answers your call directly.</div>
+          </div>
+        </div>
+
+                <!-- RIGHT: Demo + phone CTA -->
+        <div class="contact-right">
+          <div class="section-label">Free demo</div>
+          <h2 style="font-family:var(--font-display);font-size:1.7rem;margin-bottom:1.5rem;">Experience it yourself, right away</h2>
+
+          <div class="demo-block">
+            <h3>How does the free demo work?</h3>
+            <p>Call our demo number and you will immediately be spoken to by our english-speaking digital assistant. In practice, you will experience how a conversation progresses, from greeting to scheduling an appointment.</p>
+            <p>No registration, no obligations. Just call and judge for yourself.</p>
+          </div>
+
+          <!-- PHONE CTA — prominent 24/7 -->
+          <div style="position:relative;margin-top:1.5rem;">
+            <div class="phone-cta-outer-ring"></div>
+            <a href="tel:+3197010274154" class="phone-cta">
+              <div class="phone-cta-icon">📞</div>
+              <div class="phone-cta-text">
+                <div class="phone-cta-label">Call now — free demo</div>
+                <div class="phone-cta-number">+31 970 10274154</div>
+                <div class="phone-cta-sub">Immediately assisted by our assistant</div>
+              </div>
+              <div class="phone-cta-24h">24/7</div>
+            </a>
+          </div>
+         
+          <div style="position:relative;margin-top:1.5rem;">
+            <div class="phone-cta-outer-ring"></div>
+            <a href="tel:+3197010287722" class="phone-cta">
+              <div class="phone-cta-icon">📞</div>
+              <div class="phone-cta-text">
+                <div class="phone-cta-label">Dutch-speaking demo</div>
+                <div class="phone-cta-number">+31 970 10287722</div>
+                <div class="phone-cta-sub">Immediately assisted by our Dutch assistant</div>
+              </div>
+              <div class="phone-cta-24h">24/7</div>
+            </a>
+          </div>
+
+          <!-- 24/7 explanation block -->
+          <div style="background:var(--dark);border-radius:var(--radius-md);padding:1.75rem;margin-top:1.25rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+              <div style="width:10px;height:10px;border-radius:50%;background:#4ade80;flex-shrink:0;box-shadow:0 0 8px rgba(74,222,128,0.6);animation:pulseDot 2s ease-in-out infinite;"></div>
+              <span style="font-size:0.82rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.55);">Live — 24 hours a day, 7 days a week</span>
+            </div>
+            <p style="font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.7;margin:0;">This number is currently being answered by our digital assistant, not tomorrow, not after office hours, but <em style="color:var(--accent);">now, directly</em>. That is exactly what we can deliver for your company.</p>
+          </div>
+
+
+      </div>
+
+          <!-- FAQ -->
+          <div style="margin-top:2rem;">
+            <h3 style="font-family:var(--font-display);font-size:1.15rem;font-weight:500;margin-bottom:1rem;">Frequently asked questions</h3>
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-q">How quickly can I get started? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">After the introduction and setup, the assistant usually goes live within a few working days. We ensure a smooth onboarding so that you see results quickly.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Does it work with my current calendar? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Yes. Our assistant integrates seamlessly with Google Calendar and Outlook. Appointments appear directly in your existing calendar, without you having to change anything.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Does the assistant sound human? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Absolutely. Our digital assistant is built on advanced AI speech technology and sounds natural, professional, and aligned with your company’s tone. Call our demo line to experience it for yourself.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Can I cancel in the meantime? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Yes, you can cancel with due observance of the agreed notice period. We prefer to work on your satisfaction rather than contracts, contact us if you have any questions.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">What if there are technical issues? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">During office hours, you can reach us directly by email. We monitor the system proactively and usually solve issues before you notice them.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q">Is my company data secure? <span class="faq-chevron"></span></button>
+                <div class="faq-a"><div class="faq-a-inner">Yes. All data is processed in accordance with the AVG/GDPR. We only store the information necessary for the service and discuss the data processing agreements during onboarding.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <style>
+            @keyframes pulseDot {
+              0%,100% { opacity:1; }
+              50%      { opacity:0.5; }
+            }
+          </style>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section style="background:var(--dark);padding:5rem 0;text-align:center;">
+    <div class="container">
+      <div class="section-label">Ready to get started?</div>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.7rem,3vw,2.4rem);color:var(--white);margin-bottom:1.25rem;margin-top:0.5rem;">Do you know which package suits you?</h2>
+      <p style="color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto 2rem;">Use our package advisor for a tailored recommendation, or contact us directly.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="options.html#kwalificeren" class="btn btn-primary btn-lg">Package advisor</a>
+        <a href="options.html" class="btn btn-ghost-light btn-lg">Compare packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div style="font-size:0.9rem;font-weight:600;color:rgba(255,255,255,0.6);">ACSI Services</div>
+        <div class="footer-tagline">What are you waiting for?</div>
+      </div>
+        <nav class="footer-nav">
+          <a href="index_en.html">Home</a>
+          <a href="about_us.html">About us</a>
+          <a href="product_en.html">Product</a>
+          <a href="about_us.html#werkwijze">Workflow</a>
+          <a href="options.html">Options</a>
+          <a href="contact_en.html">Contact</a>
+          <a href="termsconditions.html">Terms & conditions</a> 
+          <a href="privacy_notice.html">Privacy</a> 
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> ACSI Services &nbsp;·&nbsp; KVK 99219166 &nbsp;·&nbsp; All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="info-popover" role="tooltip" aria-hidden="true"></div>
+  <script src="main.js"></script>
+</body>
+</html>

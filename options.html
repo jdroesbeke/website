@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <title>ACSI Services – Packages & Pricing</title>
+  <meta name="description" content="Compare the Essential, Performance and Premium packages from ACSI Services. Discover which package suits your business." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Wizard wrapper override */
+    .wizard-body { }
+    .pakketten-cta { text-align:center; padding: 5rem 0; background: var(--light); }
+    .pakketten-cta h2 { font-family: var(--font-display); font-size: clamp(1.7rem,3vw,2.3rem); margin-bottom:1.25rem; }
+    .pakketten-cta p  { color: var(--muted); max-width:480px; margin:0 auto 2rem; }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index_en.html" class="brand-link" aria-label="ACSI Services - Home">
+        <img src="logo.jpg" alt="ACSI Services" class="brand-logo" />
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index_en.html">Home</a>
+        <a href="about_us.html">About us</a>
+        <a href="product_en.html">Product</a>
+        <a href="about_us.html#werkwijze">Workflow</a>
+        <a href="options.html" aria-current="page">Options</a>
+        <a href="contact_en.html">Contact</a>
+      </nav>
+      <a href="contact_en.html" class="btn btn-primary nav-cta">Free demo</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="lang-switch">
+  <a class="lang-btn lang-btn--nl" id="lang-nl" href="#" aria-label="Nederlands">
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <rect width="20" height="6.67" y="0"     fill="#AE1C28"/>
+      <rect width="20" height="6.67" y="6.67"  fill="#FFFFFF"/>
+      <rect width="20" height="6.67" y="13.33" fill="#21468B"/>
+    </svg>
+  </a>
+  <a class="lang-btn lang-btn--en" id="lang-en" href="#" aria-label="English">
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <rect width="20" height="20" fill="#012169"/>
+      <path d="M0,0 L20,20 M20,0 L0,20" stroke="#fff" stroke-width="3"/>
+      <path d="M0,0 L20,20 M20,0 L0,20" stroke="#C8102E" stroke-width="1.5"/>
+      <path d="M10,0 V20 M0,10 H20" stroke="#fff" stroke-width="5"/>
+      <path d="M10,0 V20 M0,10 H20" stroke="#C8102E" stroke-width="3"/>
+    </svg>
+  </a>
+</div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-orb"></div>
+    <div class="container page-hero-inner">
+      <div class="hero-badge">Packages & Pricing</div>
+      <h1 class="page-hero-title">Transparent pricing,<br>measurable results</h1>
+      <p class="page-hero-sub">Choose the package that matches your call volume and ambitions. No hidden costs, no volume pricing that increases as you grow.</p>
+    </div>
+  </section>
+
+  <!-- ===== PRICING CARDS ===== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-label">Packages</div>
+      <h2 class="section-title reveal">Choose the package that suits you</h2>
+      <div class="pakket-grid">
+
+        <div class="pakket-card reveal">
+          <div class="pakket-header">
+            <div class="pakket-name">Essential</div>
+            <div class="pakket-tagline">The smart foundation</div>
+          </div>
+          <div class="pakket-price-block">
+            <div class="pakket-price-monthly">€445 <span>per month</span></div>
+            <div class="pakket-price-onetime">€750 setup fee</div>
+          </div>
+          <p class="pakket-desc">Ideal for self-employed professionals and small businesses that want to be professionally reachable without complexity. Up to approx. 40 calls per day.</p>
+          <ul class="pakket-features">
+            <li>Answering phone calls</li>
+            <li>Lead qualification</li>
+            <li>Booking, rescheduling & canceling appointments</li>
+            <li>Confirmation messages</li>
+            <li>Support for your team</li>
+            <li>Full calendar management</li>
+          </ul>
+          <a href="contact_en.html" class="btn btn-outline">Get started</a>
+        </div>
+
+        <div class="pakket-card pakket-card--featured reveal d1">
+          <div class="pakket-badge">Most chosen</div>
+          <div class="pakket-header">
+            <div class="pakket-name">Performance</div>
+            <div class="pakket-tagline">For growing teams</div>
+          </div>
+          <div class="pakket-price-block">
+            <div class="pakket-price-monthly">€849 <span>per month</span></div>
+            <div class="pakket-price-onetime">€1.200 setup fee</div>
+          </div>
+          <p class="pakket-desc">Perfect for businesses that want to automate their sales process and relieve their team of repetitive tasks. 40–150 calls per day.</p>
+          <ul class="pakket-features">
+            <li>Everything in Essential</li>
+            <li>Push notifications</li>
+            <li>Basic personalization</li>
+          </ul>
+          <a href="contact_en.html" class="btn btn-primary">Get started</a>
+        </div>
+
+        <div class="pakket-card reveal d2">
+          <div class="pakket-header">
+            <div class="pakket-name">Premium</div>
+            <div class="pakket-tagline">Complete peace of mind</div>
+          </div>
+          <div class="pakket-price-block">
+            <div class="pakket-price-monthly">€1.899 <span>per month</span></div>
+            <div class="pakket-price-onetime">€2.250 setup fee</div>
+          </div>
+          <p class="pakket-desc">For organizations with a high call volume that need complete peace of mind, reporting, and advanced personalization. 150+ calls per day.</p>
+          <ul class="pakket-features">
+            <li>Everything in Performance</li>
+            <li>Reports (month / quarter / year)</li>
+            <li>Advanced personalization</li>
+            <li>No-show prevention</li>
+          </ul>
+          <a href="contact_en.html" class="btn btn-outline">Get started</a>
+        </div>
+
+      </div>
+
+      <!-- Add-ons -->
+      <div style="margin-top:3.5rem;" class="reveal">
+        <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:1.25rem;text-align:center;">Optional additional services</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;max-width:860px;margin:0 auto;">
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Basic personalization</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€199 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ month</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Advanced personalization</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€299 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ month</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Push notifications</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€29 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ month</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Reporting</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€149 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ month</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Personalized reports</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€249 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ month</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">No-show prevention</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€49 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ month</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VERGELIJKINGSTABEL ===== -->
+  <section class="section section-alt" id="vergelijking">
+    <div class="container">
+      <div class="section-label">Everything at a glance</div>
+      <h2 class="section-title reveal">Package comparison</h2>
+      <div class="pricing-table-wrap reveal d1">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th class="feature-col">Service</th>
+              <th>Essential</th>
+              <th class="col-featured">Performance</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-col">1 Main number <button class="info-trigger" type="button" data-info="1 digital assistant.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Lead qualification</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Booking appointments</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Cancelling appointments</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Changing appointments</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Support for team <button class="info-trigger" type="button" data-info="The assistant helps your team by taking over time-consuming tasks.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Full calendar management <button class="info-trigger" type="button" data-info="The assistant manages the full calendar without human input.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Confirmation messages <button class="info-trigger" type="button" data-info="After booking, changing or canceling, your customer automatically receives a confirmation.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Basic personalization <button class="info-trigger" type="button" data-info="The assistant has basic knowledge of your workflow, products and services. Separate €199/month.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Push notifications <button class="info-trigger" type="button" data-info="Your team receives a notification with every calendar change by the assistant. Separate €29/month.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Advanced personalization <button class="info-trigger" type="button" data-info="In-depth knowledge of your workflow, products, treatments and aftercare. Separate €299/month.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Reports <button class="info-trigger" type="button" data-info="Monthly, quarterly and annual reports with insight into numbers, conversion and trends. Separate €149/month.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">No-show prevention <button class="info-trigger" type="button" data-info="Customers receive a reminder for their appointment. Separate €49/month.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Personalized reports <button class="info-trigger" type="button" data-info="Fully customized reports per month, quarter and year. Separate €249/month.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="optional"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pricing-cta reveal">
+        <p style="color:var(--muted);margin-bottom:1.25rem;font-size:0.9rem;">Not sure yet which package suits you? Use our package advisor below.</p>
+        <a href="#kwalificeren" class="btn btn-primary btn-lg">Discover my ideal package →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KWALIFICATIE WIZARD ===== -->
+  <section class="section" id="kwalificeren">
+    <div class="container">
+      <div class="section-label">Package advisor</div>
+      <h2 class="section-title reveal">Which package suits you?</h2>
+      <p class="section-sub reveal d1">Answer 5 short questions and we will immediately recommend which package best matches your situation.</p>
+
+      <div class="wizard-wrap reveal d2" id="qual-wizard">
+
+        <!-- Progress indicator -->
+        <div class="wizard-progress">
+          <div class="wizard-progress-bar">
+            <div class="wp-step active"><div class="wp-dot"><span>1</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>2</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>3</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>4</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>5</span></div></div>
+          </div>
+          <div class="wizard-progress-label"><span>Step 1</span> of 5</div>
+        </div>
+
+        <!-- WIZARD BODY (slides + nav) -->
+        <div class="wizard-body">
+
+          <!-- Slide 1: Calls -->
+          <div class="wizard-slide active" data-step="1">
+            <div class="wizard-q">How many calls do you receive on average per day?</div>
+            <div class="wizard-qs">This mainly determines which package is the best fit.</div>
+            <div class="wizard-options" data-group="calls">
+              <button class="wizard-btn" data-value="low">1 – 40 calls</button>
+              <button class="wizard-btn" data-value="mid">40 – 150 calls</button>
+              <button class="wizard-btn" data-value="high">150+ calls</button>
+            </div>
+          </div>
+
+          <!-- Slide 2: Mode -->
+          <div class="wizard-slide" data-step="2">
+            <div class="wizard-q">What is your primary need?</div>
+            <div class="wizard-qs">How do you want to use the assistant within your organization?</div>
+            <div class="wizard-options" data-group="mode">
+              <button class="wizard-btn" data-value="auto">Full automation</button>
+              <button class="wizard-btn" data-value="support">Support for my team</button>
+            </div>
+          </div>
+
+          <!-- Slide 3: Rapportages -->
+          <div class="wizard-slide" data-step="3">
+            <div class="wizard-q">Do you need reports?</div>
+            <div class="wizard-qs">Choose what applies to you. You can select both.</div>
+            <div class="wizard-subfield">
+              <div class="wizard-sub-q">Basic reports (conversion, numbers, trends)</div>
+              <div class="wizard-options" data-group="rapportage">
+                <button class="wizard-btn" data-value="yes">Yes, please</button>
+                <button class="wizard-btn" data-value="no">No, not necessary</button>
+              </div>
+            </div>
+            <div class="wizard-subfield" style="margin-top:1.5rem;">
+              <div class="wizard-sub-q">Customized personalized reports</div>
+              <div class="wizard-options" data-group="rapportageCustom">
+                <button class="wizard-btn" data-value="yes">Yes, please</button>
+                <button class="wizard-btn" data-value="no">No, not necessary</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Personalisatie -->
+          <div class="wizard-slide" data-step="4">
+            <div class="wizard-q">What level of personalization would you like?</div>
+            <div class="wizard-qs">This determines how well the assistant knows your specific services.</div>
+            <div class="wizard-options" data-group="personalisatie" style="flex-direction:column;align-items:flex-start;">
+              <button class="wizard-btn" data-value="basis" style="width:100%;text-align:left;padding:1rem 1.25rem;">
+                <strong style="display:block;">Basic personalization</strong>
+                <span style="font-size:0.82rem;color:var(--muted);font-weight:400;">Basic knowledge of your workflow, products and services</span>
+              </button>
+              <button class="wizard-btn" data-value="uitgebreid" style="width:100%;text-align:left;padding:1rem 1.25rem;">
+                <strong style="display:block;">Advanced personalization</strong>
+                <span style="font-size:0.82rem;color:var(--muted);font-weight:400;">In-depth knowledge including treatments, aftercare and specific workflow</span>
+              </button>
+              <button class="wizard-btn" data-value="geen" style="width:100%;text-align:left;padding:1rem 1.25rem;">
+                <strong style="display:block;">No extra personalization</strong>
+                <span style="font-size:0.82rem;color:var(--muted);font-weight:400;">Standard setup is sufficient</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Slide 5: Extras -->
+          <div class="wizard-slide" data-step="5">
+            <div class="wizard-q">Additional wishes</div>
+            <div class="wizard-qs">Select everything that applies to you. Multiple choices possible.</div>
+            <div class="wizard-options" data-group="extras" data-multi="true">
+              <button class="wizard-btn" data-value="push">Push notifications for calendar changes</button>
+              <button class="wizard-btn" data-value="noshow">No-show prevention (reminders)</button>
+              <button class="wizard-btn" data-value="bevestiging">Confirmation messages after appointments</button>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="wizard-nav">
+            <button class="btn btn-ghost" id="wiz-prev" style="visibility:hidden;">← Previous</button>
+            <span class="wizard-step-indicator">Step 1 of 5</span>
+            <button class="btn btn-primary" id="wiz-next">Next →</button>
+          </div>
+
+        </div><!-- /wizard-body -->
+
+        <!-- RESULT PANEL -->
+        <div class="wizard-result" id="wiz-result">
+          <div style="text-align:center;margin-bottom:2rem;">
+            <div style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;background:rgba(207,124,17,0.12);border-radius:50%;margin-bottom:1rem;">
+              <span style="font-size:1.5rem;">✓</span>
+            </div>
+          </div>
+          <div class="wiz-result-label">Recommended package for you</div>
+          <div class="wiz-result-pakket" id="wiz-result-pakket">—</div>
+          <div class="wiz-result-price" id="wiz-result-price"></div>
+          <div class="wiz-result-desc"  id="wiz-result-desc"></div>
+          <div class="wiz-result-extras-title" id="wiz-result-extras-title">Recommended additions</div>
+          <div class="wiz-result-extras" id="wiz-result-extras"></div>
+          <div class="wiz-result-actions">
+            <a href="contact_en.html" class="btn btn-primary btn-lg">Schedule a free demo</a>
+            <button class="btn btn-ghost" id="wiz-reset">Get advice again</button>
+          </div>
+        </div>
+
+      </div><!-- /wizard-wrap -->
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="pakketten-cta">
+    <div class="container">
+      <h2>Ready to get started?</h2>
+      <p>Request a free demo and experience for yourself what ACSI Services can mean for your availability and conversion.</p>
+      <a href="contact_en.html" class="btn btn-primary btn-lg">Free demo</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div style="font-size:0.9rem;font-weight:600;color:rgba(255,255,255,0.6);">ACSI Services</div>
+        <div class="footer-tagline">All prices on this page exclude 21% VAT</div>
+      </div>
+        <nav class="footer-nav">
+          <a href="index_en.html">Home</a>
+          <a href="about_us.html">About us</a>
+          <a href="product_en.html">Product</a>
+          <a href="about_us.html#werkwijze">Workflow</a>
+          <a href="options.html">Options</a>
+          <a href="contact_en.html">Contact</a>
+          <a href="termsconditions.html">Terms & conditions</a> 
+          <a href="privacy_notice.html">Privacy</a> 
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> ACSI Services &nbsp;·&nbsp; KVK 99219166 &nbsp;·&nbsp; All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="info-popover" role="tooltip" aria-hidden="true"></div>
+  <script src="main.js"></script>
+</body>
+</html>
