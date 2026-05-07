@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
-  <title>ACSI Services – Product</title>
-  <meta name="description" content="Een compleet systeem dat inkomende gesprekken omzet in concrete omzetkansen. Ontdek hoe ons product werkt." />
+  <title>ACSI Services – Pakketten & Prijzen</title>
+  <meta name="description" content="Vergelijk het Essential-, Performance- en Premium-pakket van ACSI Services. Ontdek welk pakket bij uw bedrijf past." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .pakketten-cta { text-align:center; padding: 5rem 0; background: var(--light); }
+    .pakketten-cta h2 { font-family: var(--font-display); font-size: clamp(1.7rem,3vw,2.3rem); margin-bottom:1.25rem; }
+    .pakketten-cta p  { color: var(--muted); max-width:480px; margin:0 auto 2rem; }
+  </style>
 </head>
 <body>
-
   <!-- ===== HEADER ===== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
@@ -23,9 +27,9 @@
       <nav class="main-nav" id="main-nav">
         <a href="index.html">Home</a>
         <a href="over-ons.html">Over ons</a>
-        <a href="product.html" aria-current="page">Product</a>
+        <a href="product.html">Product</a>
         <a href="over-ons.html#werkwijze">Werkwijze</a>
-        <a href="pakketten.html">Pakketten</a>
+        <a href="pakketten.html" aria-current="page">Pakketten</a>
         <a href="contact.html">Contact</a>
       </nav>
       <a href="contact.html" class="btn btn-primary nav-cta">Gratis demo</a>
@@ -58,162 +62,359 @@
     <div class="page-hero-grid"></div>
     <div class="page-hero-orb"></div>
     <div class="container page-hero-inner">
-      <div class="hero-badge">Ons Product</div>
-      <h1 class="page-hero-title">Meer dan een telefoniste,<br>een groeisysteem</h1>
-      <p class="page-hero-sub">ACSI Services is een compleet systeem dat ervoor zorgt dat inkomende gesprekken worden omgezet in concrete omzetkansen. Van eerste contact tot afspraak en opvolging.</p>
+      <div class="hero-badge">Pakketten & Prijzen</div>
+      <h1 class="page-hero-title">Transparante prijzen,<br>meetbare resultaten</h1>
+      <p class="page-hero-sub">Kies het pakket dat past bij uw belvolume en ambities. Geen verborgen kosten, geen volumeprijzen die oplopen naarmate u groeit.</p>
     </div>
   </section>
 
-  <!-- ===== PRODUCT OVERVIEW ===== -->
-  <section class="section" id="product-overview">
+  <!-- ===== PRICING CARDS ===== -->
+  <section class="section" id="pricing">
     <div class="container">
-      <div class="product-intro">
-        <div class="product-intro-text reveal">
-          <div class="section-label">Wat ons product doet</div>
-          <h2>Telefonie die actief bijdraagt aan uw omzet</h2>
-          <p>In de praktijk zien veel bedrijven dat telefonie een zwakke schakel is in hun proces. Oproepen worden gemist, gesprekken worden te snel afgerond of er wordt geen duidelijke opvolging gedaan. Potentiële klanten tonen interess, maar worden niet actief doorgeleid naar een volgende stap.</p>
-          <p>ACSI Services lost dit op door elk gesprek doelgericht te sturen. De digitale assistent zorgt er niet alleen voor dat een klant te woord wordt gestaan, maar ook dat er altijd een concrete vervolgstap wordt gecreëerd.</p>
-          <p>Het resultaat: een gestructureerde flow van eerste contact tot daadwerkelijke klant, waarbij elke kans maximaal wordt benut.</p>
-          <a href="pakketten.html" class="btn btn-primary" style="margin-top:0.5rem;">Bekijk de pakketten</a>
-        </div>
-        <div class="product-intro-visual reveal d1">
-          <div class="product-stat-card">
-            <div class="psc-num" data-target="100" data-suffix="%">100%</div>
-            <div class="psc-label">van oproepen direct beantwoord</div>
+      <div class="section-label">Pakketten</div>
+      <h2 class="section-title reveal">Kies het pakket dat bij u past</h2>
+      <div class="pakket-grid">
+
+        <div class="pakket-card reveal">
+          <div class="pakket-header">
+            <div class="pakket-name">Essential</div>
+            <div class="pakket-tagline">Het slimme fundament</div>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem;">
-            <div class="product-stat-card">
-              <div class="psc-num" data-target="30" data-suffix="%">30%</div>
-              <div class="psc-label">meer omzetzekerheid op inkomende leads</div>
-            </div>
-            <div class="product-stat-card">
-              <div class="psc-num">24/7</div>
-              <div class="psc-label">bereikbaar, elk tijdstip</div>
-            </div>
+          <div class="pakket-price-block">
+            <div class="pakket-price-monthly">€445 <span>per maand</span></div>
+            <div class="pakket-price-onetime">€750 eenmalige setup</div>
+          </div>
+          <p class="pakket-desc">Ideaal voor zelfstandige professionals en kleine bedrijven die professioneel bereikbaar willen zijn zonder complexiteit. Tot circa 40 oproepen per dag.</p>
+          <ul class="pakket-features">
+            <li>Beantwoorden van telefoongesprekken</li>
+            <li>Lead kwalificatie</li>
+            <li>Afspraken inplannen, verzetten & annuleren</li>
+            <li>Bevestigingsberichten</li>
+            <li>Ondersteuning van uw team</li>
+            <li>Volledig agendabeheer</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Aan de slag</a>
+        </div>
+
+        <div class="pakket-card pakket-card--featured reveal d1">
+          <div class="pakket-badge">Meest gekozen</div>
+          <div class="pakket-header">
+            <div class="pakket-name">Performance</div>
+            <div class="pakket-tagline">Voor groeiende teams</div>
+          </div>
+          <div class="pakket-price-block">
+            <div class="pakket-price-monthly">€849 <span>per maand</span></div>
+            <div class="pakket-price-onetime">€1.200 eenmalige setup</div>
+          </div>
+          <p class="pakket-desc">Perfect voor bedrijven die hun verkoopproces willen automatiseren en hun team willen ontlasten van repetitieve taken. 40–150 oproepen per dag.</p>
+          <ul class="pakket-features">
+            <li>Alles uit Essential</li>
+            <li>Push-notificaties</li>
+            <li>Basispersonalisatie</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Aan de slag</a>
+        </div>
+
+        <div class="pakket-card reveal d2">
+          <div class="pakket-header">
+            <div class="pakket-name">Premium</div>
+            <div class="pakket-tagline">Volledige ontzorging</div>
+          </div>
+          <div class="pakket-price-block">
+            <div class="pakket-price-monthly">€1.899 <span>per maand</span></div>
+            <div class="pakket-price-onetime">€2.250 eenmalige setup</div>
+          </div>
+          <p class="pakket-desc">Voor organisaties met een hoog belvolume die volledige ontzorging, rapportages en uitgebreide personalisatie nodig hebben. 150+ oproepen per dag.</p>
+          <ul class="pakket-features">
+            <li>Alles uit Performance</li>
+            <li>Rapportages (maand / kwartaal / jaar)</li>
+            <li>Uitgebreide personalisatie</li>
+            <li>No-show preventie</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Aan de slag</a>
+        </div>
+
+      </div>
+
+      <!-- Add-ons -->
+      <div style="margin-top:3.5rem;" class="reveal">
+        <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:1.25rem;text-align:center;">Optionele aanvullende diensten</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;max-width:860px;margin:0 auto;">
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Basispersonalisatie</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€199 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ maand</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Uitgebreide personalisatie</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€299 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ maand</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Push-notificaties</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€29 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ maand</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Rapportage</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€149 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ maand</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">Gepersonaliseerde rapportages</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€249 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ maand</span></div>
+          </div>
+          <div style="background:var(--light);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem 1.5rem;">
+            <div style="font-weight:600;font-size:0.92rem;margin-bottom:0.3rem;">No-show preventie</div>
+            <div style="font-size:1.1rem;font-weight:700;color:var(--accent);">€49 <span style="font-size:0.82rem;font-weight:400;color:var(--muted);">/ maand</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== WALKTHROUGH ===== -->
-  <section class="section section-alt" id="hoe-het-werkt">
+  <!-- ===== VERGELIJKINGSTABEL ===== -->
+  <section class="section section-alt" id="vergelijking">
     <div class="container">
-      <div class="section-label">Hoe het werkt</div>
-      <h2 class="section-title reveal">Van eerste bel tot afspraak</h2>
-      <p class="section-sub reveal d1">Zo verloopt elk gesprek, van het eerste contact tot de bevestiging in uw agenda. Professioneel, consistent en volledig geautomatiseerd.</p>
-      <div class="walkthrough-steps">
-        <div class="wt-step reveal">
-          <div class="wt-step-num">1</div>
-          <div class="wt-step-body">
-            <h3>Directe beantwoording</h3>
-            <p>Wanneer een klant belt, wordt de oproep direct opgenomen door de digitale assistent. Geen wachttijd, geen gemiste oproep. De beller wordt professioneel begroet op een manier die aansluit bij uw bedrij, waardoor het gesprek vanaf het eerste moment vertrouwd aanvoelt.</p>
-          </div>
-        </div>
-        <div class="wt-step reveal d1">
-          <div class="wt-step-num">2</div>
-          <div class="wt-step-body">
-            <h3>Behoefte bepalen</h3>
-            <p>De assistent begrijpt de vraag of behoefte van de beller. In plaats van alleen een antwoord te geven en het gesprek te beëindigen, stuurt de assistent het gesprek doelgericht verder. Er worden relevante vragen gesteld om de volgende logische stap te bepalen.</p>
-          </div>
-        </div>
-        <div class="wt-step reveal d2">
-          <div class="wt-step-num">3</div>
-          <div class="wt-step-body">
-            <h3>Lead kwalificeren</h3>
-            <p>Wanneer de beller interesse heeft, wordt deze automatisch gekwalificeerd. De assistent verzamelt de juiste informatie op een natuurlijke manier binnen het gespre, zonder dat het voelt als een formulier of ondervraging. Type aanvraag, voorkeuren, relevante details: alles wordt vastgelegd.</p>
-          </div>
-        </div>
-        <div class="wt-step reveal d3">
-          <div class="wt-step-num">4</div>
-          <div class="wt-step-body">
-            <h3>Afspraak inplannen</h3>
-            <p>De assistent kijkt direct in de agenda naar beschikbare momenten en biedt deze aan. Zodra een tijd wordt gekozen, wordt de afspraak direct vastgelegd en bevestigd in uw Google Calendar of Outloo, volledig automatisch, zonder handmatig werk.</p>
-          </div>
-        </div>
-        <div class="wt-step reveal d4">
-          <div class="wt-step-num">5</div>
-          <div class="wt-step-body">
-            <h3>Bevestiging & opvolging</h3>
-            <p>Na het gesprek ontvangt de klant een bevestigingsbericht. Bij het Premium pakket worden er herinneringen verstuurd ter preventie van no-shows. De informatie uit het gesprek wordt gestructureerd opgeslagen voor verdere opvolging en rapportage.</p>
-          </div>
-        </div>
-        <div class="wt-step reveal d5">
-          <div class="wt-step-num">6</div>
-          <div class="wt-step-body">
-            <h3>Geen losse eindjes</h3>
-            <p>Leads die nog niet direct tot een afspraak hebben geleid, worden niet losgelaten. Op basis van de informatie uit het gesprek kan opvolging worden gestructureerd. Hierdoor ontstaat er een continue stroom, met geen gemiste kansen.</p>
-          </div>
-        </div>
+      <div class="section-label">Alles in één oogopslag</div>
+      <h2 class="section-title reveal">Pakketvergelijking</h2>
+      <div class="pricing-table-wrap reveal d1">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th class="feature-col">Dienst</th>
+              <th>Essential</th>
+              <th class="col-featured">Performance</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-col">1 Hoofdnummer <button class="info-trigger" type="button" data-info="1 digitale assistent.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Lead kwalificatie</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Afspraken inplannen</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Afspraken annuleren</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Afspraken verzetten</td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Ondersteuning team <button class="info-trigger" type="button" data-info="De assistent helpt uw team door tijdrovende taken over te nemen.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Volledig agendabeheer <button class="info-trigger" type="button" data-info="De assistent beheert de volledige agenda zonder menselijke tussenkomst.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Bevestigingsberichten <button class="info-trigger" type="button" data-info="Na het inplannen, verzetten of annuleren ontvangt uw klant automatisch een bevestiging.">i</button></td>
+              <td><span class="yes"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Basispersonalisatie <button class="info-trigger" type="button" data-info="De assistent heeft basiskennis van uw werkwijze, producten en diensten. Afzonderlijk €199/maand.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Push-notificaties <button class="info-trigger" type="button" data-info="Uw team ontvangt bij elke agendawijziging door de assistent een melding. Afzonderlijk €29/maand.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="yes"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Uitgebreide personalisatie <button class="info-trigger" type="button" data-info="Diepgaande kennis van uw werkwijze, producten, behandelingen en nazorg. Afzonderlijk €299/maand.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Rapportages <button class="info-trigger" type="button" data-info="Maandelijkse, kwartaal- en jaarrapportages met inzicht in aantallen, conversie en trends. Afzonderlijk €149/maand.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">No-show preventie <button class="info-trigger" type="button" data-info="Klanten ontvangen een herinnering voor hun afspraak. Afzonderlijk €49/maand.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="yes"></span></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Gepersonaliseerde rapportages <button class="info-trigger" type="button" data-info="Volledig op maat gemaakte rapportages per maand, kwartaal en jaar. Afzonderlijk €249/maand.">i</button></td>
+              <td><span class="optional"></span></td>
+              <td class="col-featured"><span class="optional"></span></td>
+              <td><span class="optional"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pricing-cta reveal">
+        <p style="color:var(--muted);margin-bottom:1.25rem;font-size:0.9rem;">Nog niet zeker welk pakket bij u past? Gebruik onze pakketadviseur hieronder.</p>
+        <a href="#kwalificeren" class="btn btn-primary btn-lg">Ontdek mijn ideale pakket →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONCURRENTIE ===== -->
-  <section class="section section-dark" id="waarom-acsi">
+  <!-- ===== KWALIFICATIE WIZARD ===== -->
+  <section class="section" id="kwalificeren">
     <div class="container">
-      <div class="section-label">Waarom ACSI Services</div>
-      <h2 class="section-title reveal">Hoe wij de concurrentie verslaan</h2>
-      <p class="section-sub reveal d1">Het verschil zit niet in kleine functionaliteiten, maar in hoe het geheel is opgebouwd. ACSI Services levert geen too, maar een systeem dat structureel bijdraagt aan omzet, efficiëntie en schaalbaarheid.</p>
-      <div class="concurrentie-grid">
-        <div class="conc-card conc-card--them reveal">
-          <h3>Andere aanbieders</h3>
-          <div class="conc-list">
-            <div class="conc-item">
-              <span class="ci-bad">✕</span>
-              <span>Oproepen worden aangenomen, maar niet actief gestuurd op conversie.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-bad">✕</span>
-              <span>Leads worden geregistreerd maar niet begeleid naar een concrete volgende stap.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-bad">✕</span>
-              <span>Prijsmodellen gekoppeld aan gebrui, kosten lopen snel op bij groei.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-bad">✕</span>
-              <span>Na implementatie beperkte begeleiding of proactieve optimalisatie.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-bad">✕</span>
-              <span>Agenda gevuld, maar met wisselende kwaliteit van afspraken.</span>
-            </div>
-          </div>
-        </div>
-        <div class="conc-card conc-card--us reveal d1">
-          <h3>ACSI Services</h3>
-          <div class="conc-list">
-            <div class="conc-item">
-              <span class="ci-good">✓</span>
-              <span>Elk gesprek wordt actief gestuurd richting een concrete uitkomst.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-good">✓</span>
-              <span>Leads worden gekwalificeerd en begeleid, van eerste contact tot klant.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-good">✓</span>
-              <span>Vaste, voorspelbare structuur, groei leidt niet tot evenredig hogere kosten.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-good">✓</span>
-              <span>Doorlopende betrokkenheid, monitoring en proactieve optimalisatie.</span>
-            </div>
-            <div class="conc-item">
-              <span class="ci-good">✓</span>
-              <span>Agenda gevuld met gekwalificeerde afspraken die daadwerkelijk waarde vertegenwoordigen.</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="section-label">Pakketadvies</div>
+      <h2 class="section-title reveal">Welk pakket past bij u?</h2>
+      <p class="section-sub reveal d1">Beantwoord 5 korte vragen en wij adviseren direct welk pakket het beste aansluit bij uw situatie.</p>
 
-      <div style="text-align:center;margin-top:4rem;" class="reveal">
-        <p style="color:rgba(255,255,255,0.55);font-size:0.95rem;margin-bottom:1.5rem;">Overtuigd? Ontdek welk pakket bij u past.</p>
-        <a href="pakketten.html" class="btn btn-primary btn-lg">Bekijk onze pakketten</a>
-      </div>
+      <div class="wizard-wrap reveal d2" id="qual-wizard">
+
+        <!-- Progress indicator -->
+        <div class="wizard-progress">
+          <div class="wizard-progress-bar">
+            <div class="wp-step active"><div class="wp-dot"><span>1</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>2</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>3</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>4</span></div></div>
+            <div class="wp-step"><div class="wp-dot"><span>5</span></div></div>
+          </div>
+          <div class="wizard-progress-label"><span>Stap 1</span> van 5</div>
+        </div>
+
+        <!-- WIZARD BODY (slides + nav) -->
+        <div class="wizard-body">
+
+          <!-- Slide 1: Calls -->
+          <div class="wizard-slide active" data-step="1">
+            <div class="wizard-q">Hoeveel oproepen ontvangt u gemiddeld per dag?</div>
+            <div class="wizard-qs">Dit bepaalt voornamelijk welk pakket het beste aansluit.</div>
+            <div class="wizard-options" data-group="calls">
+              <button class="wizard-btn" data-value="low">1 – 40 oproepen</button>
+              <button class="wizard-btn" data-value="mid">40 – 150 oproepen</button>
+              <button class="wizard-btn" data-value="high">150+ oproepen</button>
+            </div>
+          </div>
+
+          <!-- Slide 2: Mode -->
+          <div class="wizard-slide" data-step="2">
+            <div class="wizard-q">Wat is uw voornaamste behoefte?</div>
+            <div class="wizard-qs">Hoe wilt u de assistent inzetten binnen uw organisatie?</div>
+            <div class="wizard-options" data-group="mode">
+              <button class="wizard-btn" data-value="auto">Volledige automatisering</button>
+              <button class="wizard-btn" data-value="support">Ondersteuning van mijn team</button>
+            </div>
+          </div>
+
+          <!-- Slide 3: Rapportages -->
+          <div class="wizard-slide" data-step="3">
+            <div class="wizard-q">Heeft u behoefte aan rapportages?</div>
+            <div class="wizard-qs">Kies wat op u van toepassing is. U kunt beide selecteren.</div>
+            <div class="wizard-subfield">
+              <div class="wizard-sub-q">Basisrapportages (conversie, aantallen, trends)</div>
+              <div class="wizard-options" data-group="rapportage">
+                <button class="wizard-btn" data-value="yes">Ja, graag</button>
+                <button class="wizard-btn" data-value="no">Nee, niet nodig</button>
+              </div>
+            </div>
+            <div class="wizard-subfield" style="margin-top:1.5rem;">
+              <div class="wizard-sub-q">Op maat gemaakte gepersonaliseerde rapportages</div>
+              <div class="wizard-options" data-group="rapportageCustom">
+                <button class="wizard-btn" data-value="yes">Ja, graag</button>
+                <button class="wizard-btn" data-value="no">Nee, niet nodig</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Personalisatie -->
+          <div class="wizard-slide" data-step="4">
+            <div class="wizard-q">Welk niveau van personalisatie wilt u?</div>
+            <div class="wizard-qs">Dit bepaalt hoe goed de assistent uw specifieke diensten kent.</div>
+            <div class="wizard-options" data-group="personalisatie" style="flex-direction:column;align-items:flex-start;">
+              <button class="wizard-btn" data-value="basis" style="width:100%;text-align:left;padding:1rem 1.25rem;">
+                <strong style="display:block;">Basispersonalisatie</strong>
+                <span style="font-size:0.82rem;color:var(--muted);font-weight:400;">Basiskennis van uw werkwijze, producten en diensten</span>
+              </button>
+              <button class="wizard-btn" data-value="uitgebreid" style="width:100%;text-align:left;padding:1rem 1.25rem;">
+                <strong style="display:block;">Uitgebreide personalisatie</strong>
+                <span style="font-size:0.82rem;color:var(--muted);font-weight:400;">Diepgaande kennis inclusief behandelingen, nazorg en specifieke werkwijze</span>
+              </button>
+              <button class="wizard-btn" data-value="geen" style="width:100%;text-align:left;padding:1rem 1.25rem;">
+                <strong style="display:block;">Geen extra personalisatie</strong>
+                <span style="font-size:0.82rem;color:var(--muted);font-weight:400;">Standaardinstellingen zijn voldoende</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Slide 5: Extras -->
+          <div class="wizard-slide" data-step="5">
+            <div class="wizard-q">Aanvullende wensen</div>
+            <div class="wizard-qs">Selecteer alles wat op u van toepassing is. Meerdere keuzes mogelijk.</div>
+            <div class="wizard-options" data-group="extras" data-multi="true">
+              <button class="wizard-btn" data-value="push">Push-notificaties bij agendawijzigingen</button>
+              <button class="wizard-btn" data-value="noshow">No-show preventie (herinneringen)</button>
+              <button class="wizard-btn" data-value="bevestiging">Bevestigingsberichten na afspraken</button>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="wizard-nav">
+            <button class="btn btn-ghost" id="wiz-prev" style="visibility:hidden;">← Vorige</button>
+            <span class="wizard-step-indicator">Stap 1 van 5</span>
+            <button class="btn btn-primary" id="wiz-next">Volgende →</button>
+          </div>
+
+        </div><!-- /wizard-body -->
+
+        <!-- RESULT PANEL -->
+        <div class="wizard-result" id="wiz-result">
+          <div style="text-align:center;margin-bottom:2rem;">
+            <div style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;background:rgba(207,124,17,0.12);border-radius:50%;margin-bottom:1rem;">
+              <span style="font-size:1.5rem;">✓</span>
+            </div>
+          </div>
+          <div class="wiz-result-label">Aanbevolen pakket voor u</div>
+          <div class="wiz-result-pakket" id="wiz-result-pakket">—</div>
+          <div class="wiz-result-price" id="wiz-result-price"></div>
+          <div class="wiz-result-desc"  id="wiz-result-desc"></div>
+          <div class="wiz-result-extras-title" id="wiz-result-extras-title">Aanbevolen toevoegingen</div>
+          <div class="wiz-result-extras" id="wiz-result-extras"></div>
+          <div class="wiz-result-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg">Plan een gratis demo</a>
+            <button class="btn btn-ghost" id="wiz-reset">Opnieuw advies</button>
+          </div>
+        </div>
+
+      </div><!-- /wizard-wrap -->
     </div>
   </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="pakketten-cta">
+    <div class="container">
+      <h2>Klaar om te starten?</h2>
+      <p>Vraag een gratis demo aan en ervaar zelf wat ACSI Services kan betekenen voor uw bereikbaarheid en conversie.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Gratis demo</a>
+    </div>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
@@ -221,7 +422,7 @@
     <div class="footer-top">
       <div>
         <div style="font-size:0.9rem;font-weight:600;color:rgba(255,255,255,0.6);">ACSI Services</div>
-        <div class="footer-tagline">Een volle agenda, zonder handmatig werk</div>
+        <div class="footer-tagline">Alle prijzen op deze pagina zijn exclusief 21% btw</div>
       </div>
         <nav class="footer-nav">
           <a href="index.html">Home</a>
@@ -230,8 +431,8 @@
           <a href="over-ons.html#werkwijze">Werkwijze</a>
           <a href="pakketten.html">Pakketten</a>
           <a href="contact.html">Contact</a>
-          <a href="algemenevoorwaarden.html">Algemene voorwaarden</a> 
-          <a href="privacybeleid.html">Privacybeleid</a> 
+          <a href="algemenevoorwaarden.html">Algemene voorwaarden</a>
+          <a href="privacybeleid.html">Privacybeleid</a>
         </nav>
       </div>
       <div class="footer-bottom">
