@@ -141,36 +141,31 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ===== Language switch ===== */
   const PAGE_MAP = {
     // NL → EN
-    'index.html':               'index_en.html',
-    'over-ons.html':            'about_us.html',
-    'product.html':             'product_en.html',
-    'pakketten.html':           'options.html',
-    'contact.html':             'contact_en.html',
-    'privacybeleid.html':       'privacy_notice.html',
-    'algemenevoorwaarden.html': 'termsconditiones.html',
+    '/nl/index.html':               '/en/index_en.html',
+    '/nl/over-ons.html':            '/en/about_us.html',
+    '/nl/product.html':             '/en/product_en.html',
+    '/nl/pakketten.html':           '/en/options.html',
+    '/nl/contact.html':             '/en/contact_en.html',
+    '/nl/privacybeleid.html':       '/en/privacy_notice.html',
+    '/nl/algemenevoorwaarden.html': '/en/termsconditions.html',
     // EN → NL
-    'index_en.html':            'index.html',
-    'about_us.html':            'over-ons.html',
-    'product_en.html':          'product.html',
-    'options.html':             'pakketten.html',
-    'contact_en.html':          'contact.html',
-    'privacy_notice.html':      'privacybeleid.html',
-    'termsconditiones.html':    'algemenevoorwaarden.html',
+    '/en/index_en.html':            '/nl/index.html',
+    '/en/about_us.html':            '/nl/over-ons.html',
+    '/en/product_en.html':          '/nl/product.html',
+    '/en/options.html':             '/nl/pakketten.html',
+    '/en/contact_en.html':          '/nl/contact.html',
+    '/en/privacy_notice.html':      '/nl/privacybeleid.html',
+    '/en/termsconditions.html':     '/nl/algemenevoorwaarden.html',
   };
-
-  const NL_PAGES = [
-    'index.html', 'over-ons.html', 'product.html',
-    'pakketten.html', 'contact.html',
-    'privacybeleid.html', 'algemenevoorwaarden.html',
-  ];
 
   const btnNl = document.getElementById('lang-nl');
   const btnEn = document.getElementById('lang-en');
 
   if (btnNl && btnEn) {
-    const current = window.location.pathname.split('/').pop() || 'index.html';
-    const isNL    = NL_PAGES.includes(current);
-    const target  = PAGE_MAP[current];
+    const rawPath = window.location.pathname;
+    const path = rawPath.endsWith('/') ? rawPath + 'index.html' : rawPath;
+    const isNL = path.startsWith('/nl/');
+    const target = PAGE_MAP[path];
 
     // Mark active / inactive
     if (isNL) {
@@ -185,10 +180,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (target) {
       if (isNL) {
         btnEn.href = target;
-        btnNl.href = current;
+        btnNl.href = path;
       } else {
         btnNl.href = target;
-        btnEn.href = current;
+        btnEn.href = path;
       }
     }
 
@@ -213,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const totalSteps = slides.length;
   let current = 0;
+  const isEN = document.documentElement.lang === 'en';
 
   const sel = {
     calls: null, mode: null,
@@ -228,9 +224,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (i < idx) s.classList.add('done');
       if (i === idx) s.classList.add('active');
     });
-    if (stepLabel) stepLabel.textContent = `Stap ${idx + 1} van ${totalSteps}`;
+    if (stepLabel) stepLabel.textContent = isEN
+      ? `Step ${idx + 1} of ${totalSteps}`
+      : `Stap ${idx + 1} van ${totalSteps}`;
     if (prevBtn) prevBtn.style.visibility = idx === 0 ? 'hidden' : 'visible';
-    if (nextBtn) nextBtn.textContent = idx === totalSteps - 1 ? 'Bekijk aanbeveling' : 'Volgende →';
+    if (nextBtn) nextBtn.textContent = idx === totalSteps - 1
+      ? (isEN ? 'View recommendation' : 'Bekijk aanbeveling')
+      : (isEN ? 'Next →' : 'Volgende →');
     current = idx;
   }
 
@@ -320,25 +320,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (s.calls === 'low') {
       pakket = 'Essential';
-      price  = '€750 eenmalig · €445 per maand';
-      desc   = 'De beste keuze voor zelfstandigen en kleine bedrijven die professioneel bereikbaar willen zijn zonder complexiteit.';
+      price  = isEN ? '€750 one-time · €445/month'   : '€750 eenmalig · €445 per maand';
+      desc   = isEN
+        ? 'The best choice for freelancers and small businesses that want to be professionally reachable without complexity.'
+        : 'De beste keuze voor zelfstandigen en kleine bedrijven die professioneel bereikbaar willen zijn zonder complexiteit.';
     } else if (s.calls === 'mid') {
       pakket = 'Performance';
-      price  = '€1.200 eenmalig · €849 per maand';
-      desc   = 'Ideaal voor groeiende bedrijven die hun salesproces willen automatiseren en hun team willen ontlasten.';
+      price  = isEN ? '€1,200 one-time · €849/month' : '€1.200 eenmalig · €849 per maand';
+      desc   = isEN
+        ? 'Ideal for growing businesses that want to automate their sales process and reduce the workload on their team.'
+        : 'Ideaal voor groeiende bedrijven die hun salesproces willen automatiseren en hun team willen ontlasten.';
     } else if (s.calls === 'high') {
       pakket = 'Premium';
-      price  = '€2.250 eenmalig · €1.899 per maand';
-      desc   = 'Volledige ontzorging voor organisaties met een hoog belvolume die maximale controle en inzicht willen.';
+      price  = isEN ? '€2,250 one-time · €1,899/month' : '€2.250 eenmalig · €1.899 per maand';
+      desc   = isEN
+        ? 'Full peace of mind for organisations with high call volume that want maximum control and insight.'
+        : 'Volledige ontzorging voor organisaties met een hoog belvolume die maximale controle en inzicht willen.';
     }
 
     const extrasList = [];
-    if (s.personalisatie === 'basis'      && pakket === 'Essential') extrasList.push('Basis personalisatie (€199 p/m)');
-    if (s.personalisatie === 'uitgebreid' && pakket !== 'Premium')   extrasList.push('Uitgebreide personalisatie (€299 p/m)');
-    if (s.rapportage === 'yes'            && pakket !== 'Premium')   extrasList.push('Rapportage (€149 p/m)');
-    if (s.rapportageCustom === 'yes')                                extrasList.push('Gepersonaliseerde rapportages (€249 p/m)');
-    if (s.extras.includes('push')         && pakket === 'Essential') extrasList.push('Push notificaties (€29 p/m)');
-    if (s.extras.includes('noshow')       && pakket !== 'Premium')   extrasList.push('No-show preventie (€49 p/m)');
+    if (s.personalisatie === 'basis'      && pakket === 'Essential') extrasList.push(isEN ? 'Basic personalisation (€199/month)'    : 'Basis personalisatie (€199 p/m)');
+    if (s.personalisatie === 'uitgebreid' && pakket !== 'Premium')   extrasList.push(isEN ? 'Advanced personalisation (€299/month)' : 'Uitgebreide personalisatie (€299 p/m)');
+    if (s.rapportage === 'yes'            && pakket !== 'Premium')   extrasList.push(isEN ? 'Reporting (€149/month)'                : 'Rapportage (€149 p/m)');
+    if (s.rapportageCustom === 'yes')                                extrasList.push(isEN ? 'Custom reporting (€249/month)'         : 'Gepersonaliseerde rapportages (€249 p/m)');
+    if (s.extras.includes('push')         && pakket === 'Essential') extrasList.push(isEN ? 'Push notifications (€29/month)'       : 'Push notificaties (€29 p/m)');
+    if (s.extras.includes('noshow')       && pakket !== 'Premium')   extrasList.push(isEN ? 'No-show prevention (€49/month)'       : 'No-show preventie (€49 p/m)');
 
     return { pakket, price, desc, extrasList };
   }
